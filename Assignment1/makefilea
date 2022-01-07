@@ -1,0 +1,11 @@
+main: driver.o tnode.h tlist.h tlist.hpp
+	g++ -o driver.x -std=c++11 driver.o tnode.h tlist.h tlist.hpp
+driver.o: driver.cpp
+	g++ -c -std=c++11 driver.cpp
+
+clean:
+	-rm *.o
+
+
+
+
