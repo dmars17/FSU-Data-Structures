@@ -1,0 +1,2 @@
+Clear() called in the stack runs a while loop. While not empty call pop. Pop calls RemoveFront from tlist. RemoveFront just deletes 
+the first node from the list. This all comes down to the while loop. This gives us a time complexity of O(n).

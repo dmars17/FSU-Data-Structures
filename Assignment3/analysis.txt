@@ -1,0 +1,14 @@
+Analyze the worst-case run-time complexities of the member functions reverse() and remove_if(). 
+Give the complexities in the form of Big-O. 
+Your analysis can be informal; however, it must be clearly understandable by others.
+
+reverse():
+
+Running reverse() is completed in a single for loop. It iterates through the list backwards and visits each link
+one time. This results in a run-time complexity of O(n).
+
+
+remove_if():
+
+Running remove_if()is completed using a single loop as well. Iterate throught the list and check if the predicate is true
+or not. The loop again gives us a O(n). This results in the run-time complexity of O(n).

@@ -1,0 +1,19 @@
+CC= g++ -std=c++11
+
+main: in2post.o stack.o tlist.o tnode.h
+	$(CC) in2post.o stack.o tlist.o tnode.o -o in2post.x
+
+in2post.o: in2post.cpp 
+	$(CC) -c in2post.cpp
+
+stack.o: stack.h stack.hpp tlist.o
+	$(CC) -c stack.h
+	$(CC) -c stack.hpp	
+
+tlist.o: tlist.h tlist.hpp
+	$(CC) -c tlist.h
+	$(CC) -c tlist.hpp
+
+clean:
+	rm *.h.gch *.x *.o
+
